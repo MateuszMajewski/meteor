@@ -1,0 +1,27 @@
+<body>
+    <div class="container">
+        <header>
+            <h1>Ranking</h1>
+        </header>
+
+        <form class="new-task">
+            <input type="text" name="text" placeholder="Dodaj element rankingu" />
+        </form>
+        <br>
+        <div>
+            <span>Sortuj: </span>
+            <span>Malejaco</span>
+            <label  class="switch">
+                <input type="checkbox" class="sort-checked">
+                <span class="slider round"></span>
+            </label>
+            <span>Rosnaco</span>
+        </div>
+
+        <ul>
+            {{#each tasks}}
+            {{> task}}
+            {{/each}}
+        </ul>
+    </div>
+</body>
